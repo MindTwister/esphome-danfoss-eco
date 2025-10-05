@@ -3,7 +3,7 @@
 #include "esphome/core/log.h"
 
 #include "helpers.h"
-#include "xxtea.h"
+#include "xxtea_espidf.h"
 
 namespace esphome
 {

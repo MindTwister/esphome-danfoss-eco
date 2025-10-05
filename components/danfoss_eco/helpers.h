@@ -1,6 +1,6 @@
 #pragma once
 
-#include "xxtea.h"
+#include "xxtea_espidf.h"
 
 #include <esp_bt_defs.h>
 
@@ -20,7 +20,7 @@ namespace esphome
 
         bool parse_bit(uint8_t data, int pos);
         bool parse_bit(uint16_t data, int pos);
-        void set_bit(uint8_t data, int pos, bool value);
+        void set_bit(uint8_t &data, int pos, bool value);
 
         void reverse_chunks(uint8_t *data, int len, uint8_t *reversed_buff);
 
